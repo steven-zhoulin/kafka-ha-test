@@ -1,0 +1,9 @@
+server:
+  port: 8080
+
+# 日志
+logging:
+ level:
+   root: info
+   com.github: debug
+   kafka.utils: info
