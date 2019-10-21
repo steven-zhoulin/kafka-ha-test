@@ -16,7 +16,7 @@ import java.util.concurrent.LinkedBlockingQueue;
  * @date 2019-10-21
  */
 @Slf4j
-@Component
+//@Component
 public class KafkaSendRunner implements CommandLineRunner {
 
     @Autowired

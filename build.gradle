@@ -22,14 +22,14 @@ repositories {
 }
 
 dependencies {
-    implementation ('org.springframework.boot:spring-boot-starter') {
+    implementation('org.springframework.boot:spring-boot-starter') {
         exclude module: "logback-classic"
     }
     implementation 'org.springframework.boot:spring-boot-starter-web'
-    // implementation 'org.springframework.kafka:spring-kafka'
-    //implementation 'org.apache.kafka:kafka_2.10:0.8.2.0'
     implementation 'org.apache.kafka:kafka_2.11:0.8.2.2'
     implementation 'org.apache.kafka:kafka-clients:1.0.1'
+
+    implementation fileTree(dir: 'lib', includes: ['*.jar'])
 
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     compileOnly 'org.projectlombok:lombok'

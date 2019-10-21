@@ -34,3 +34,5 @@ gradlew
 gradlew.bat
 out/
 src/test/
+
+.idea
